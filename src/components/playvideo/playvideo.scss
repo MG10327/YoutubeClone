@@ -21,4 +21,54 @@
     margin-top: 10px;
     font-size: 14px;
     color: #5a5a5a;
+
+    img {
+        width: 20px;
+        margin-right: 8px;
+    }
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #ccc;
+        margin: 10px 0;
+    }
+}
+
+.publisher {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    div {
+        flex: 1;
+        line-height: 18px;
+    }
+
+    img {
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    div p {
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    div span {
+        font-size: 13px;
+        color: #5a5a5a;
+    }
+}
+
+.publisher, .comment, .vid-description {
+    margin-top: 20px;
 }
