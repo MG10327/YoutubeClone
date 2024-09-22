@@ -22,6 +22,143 @@ const playvideo = () => {
                 <span><img src={save} alt="" />Save</span>
             </div>
         </div>
+        <hr />
+        <div className="publisher">
+            <img src={jack} alt="" />
+            <div>
+                <p>GreatStack</p>
+                <span>1M Subscribers</span>
+            </div>
+            <button>Subscribe</button>
+            <div className="vid-description">
+                <p>Channel that makes learning easy</p>
+                <p>Subscribe to GreatStack to watch more tutorials on Web Development</p>
+                <hr />
+                <h4>130 Comments</h4>
+
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+                <div className="comment">
+                    <img src={user_profile} alt="" />
+                    <h3>Jack Nicholson <span>1 day ago</span></h3>
+                    <p>Thanks for such a great tutorial!</p>
+
+                    <div className="comment-action">
+                        <img src={like} alt="" />
+                        <span>244</span>
+                        <img src={dislike} alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
