@@ -3,7 +3,7 @@ import './video.scss'
 
 const video = () => {
   return (
-    <div>video</div>
+    <div></div>
   )
 }
 

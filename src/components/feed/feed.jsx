@@ -8,16 +8,17 @@ import thumbnail5 from '../../assets/thumbnail5.png'
 import thumbnail6 from '../../assets/thumbnail6.png'
 import thumbnail7 from '../../assets/thumbnail7.png'
 import thumbnail8 from '../../assets/thumbnail8.png'
+import { Link } from 'react-router-dom'
 
 const feed = () => {
   return (
     <div className="feed">
-        <div className="card">
+        <Link to={'video/20/4521'} className="card">
             <img src={thumbnail1} alt="" />
             <h2>The best video to help you learn to make React Apps</h2>
             <h3>Greatstack</h3>
             <p>200k views &bull; 2 days ago</p>
-        </div>
+        </Link>
         <div className="card">
             <img src={thumbnail2} alt="" />
             <h2>The best video to help you learn to make React Apps</h2>
