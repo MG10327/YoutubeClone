@@ -48,6 +48,8 @@ const sidebar = ({sidebar}) => {
             </div>
         </div>
 
+        <hr />
+
         <div className="subscribed-list">
             <h3>Subscribed</h3>
             <div className="side-link">
