@@ -44,3 +44,11 @@
         margin-right: 20px;
     }
 }
+
+.small-sidebar {
+    width: 5%;
+
+    p, h3 {
+        display: none;
+    }
+}
