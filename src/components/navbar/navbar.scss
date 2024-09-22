@@ -28,4 +28,28 @@ nav {
         padding: 8px 12px;
         border-radius: 25px;
     }
+
+    .search-box img {
+        width: 15px;
+    }
+
+    input {
+        width: 400px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+    }
+}
+
+.nav-right {
+
+    img {
+        width: 25px;
+        margin-right: 25px;
+    }
+
+    .user-icon {
+        width: 35px;
+        border-radius: 50%;
+    }
 }
