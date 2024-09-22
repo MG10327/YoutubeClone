@@ -1,5 +1,14 @@
+.play-container {
+    display: flex;
+
+    hr {
+        margin-top: 20px;
+    }
+}
+
 .play-video {
     flex-basis: 69%;
+    padding-left: 55px;
 
     video {
         width: 100%;
@@ -21,6 +30,7 @@
     margin-top: 10px;
     font-size: 14px;
     color: #5a5a5a;
+
 
     img {
         width: 20px;
@@ -80,7 +90,6 @@
 }
 
 .vid-description {
-    padding-left: 55px;
     margin: 15px 0;
 
     p {
