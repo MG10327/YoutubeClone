@@ -53,3 +53,32 @@ nav {
         border-radius: 50%;
     }
 }
+
+@media (max-width: 900px) {
+    .menu-icon {
+        display: none;
+    }
+    .nav-right {
+        img {
+            display: none;
+        }
+
+        .user-icon {
+            display: block;
+            width: 30px;
+        }
+    }
+
+    .nav-left {
+
+        .logo-icon {
+            width: 90px;
+        }
+    }
+
+    .nav-middle {
+        .search-box input {
+            width: 100px;
+        }
+    }
+}

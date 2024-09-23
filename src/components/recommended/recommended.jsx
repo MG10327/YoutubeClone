@@ -18,12 +18,13 @@ const recommended = ({categoryId}) => {
 
   return (
     <div className="recommended">
+        <h2 className="recommended-header">Recommended Section</h2>
         {apiData.map((item, index)=> {
             return (
                 <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className="side-video-list">
                     <img src={item.snippet.thumbnails.high.url} alt="" />
                     <div className="vid-info">
-                        <h4>{item.snippet.title}</h4>
+                        <h4>{item.snippet.title.slice(0, 30) + "..."}</h4>
                         <p>{item.snippet.channelTitle}</p>
                         <p>{value_converter(item.statistics.viewCount)} Views</p>
                     </div>
