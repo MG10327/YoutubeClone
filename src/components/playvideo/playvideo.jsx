@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './playvideo.scss'
 import video1 from '../../assets/video.mp4'
 import like from '../../assets/like.png'
@@ -8,13 +8,26 @@ import save from '../../assets/save.png'
 import jack from '../../assets/jack.png'
 import user_profile from '../../assets/user_profile.jpg'
 import { useParams } from 'react-router-dom'
+import { API_KEY } from '../../data'
 
 const playvideo = ({videoId}) => {
+
+    const [apiData, setApiData] = useState(null)
+
+    const fetchVideoData = async ()=> {
+        // Fetching Videos Data
+        const videoDetails_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=${API_KEY}`
+        await fetch(videoDetails_url).then(res=>res.json()).then(data=> setApiData(data.items[0]))
+    }
+
+    useEffect(()=> {
+        fetchVideoData()
+    },[])
 
   return (
     <div className="play-video">
         <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h3>The Best Youtube Video to lean web development</h3>
+        <h3>{apiData ? apiData.snippet.title : "Title Here"}</h3>
         <div className="play-video-info">
             <p>200,000 views &bull; 2 days ago</p>
             <div>
@@ -35,7 +48,7 @@ const playvideo = ({videoId}) => {
         </div>
 
         <div className="vid-description">
-            <p>Channel that makes learning easy</p>
+            <p></p>
             <p>Subscribe to GreatStack to watch more tutorials on Web Development</p>
             <hr />
             <h4>130 Comments</h4>

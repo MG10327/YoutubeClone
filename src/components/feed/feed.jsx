@@ -29,7 +29,6 @@ const feed = ({category}) => {
                 </Link>
             )
         })}
-
     </div>
   )
 }
