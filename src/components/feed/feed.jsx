@@ -28,11 +28,11 @@ const feed = ({category}) => {
     <div className="feed">
         {data.map((item,index)=>{
             return (
-                <Link to={'video/20/4521'} className="card">
-                    <img src={thumbnail1} alt="" />
-                    <h2>The best video to help you learn to make React Apps</h2>
-                    <h3>Greatstack</h3>
-                    <p>200k views &bull; 2 days ago</p>
+                <Link to={`video/${item.snippet.categoryId}/${item.id}`} className="card">
+                    <img src={item.snippet.thumbnails.medium.url} alt="" />
+                    <h2></h2>
+                    <h3></h3>
+                    <p></p>
                 </Link>
             )
         })}
