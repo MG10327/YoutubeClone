@@ -76,7 +76,7 @@ const playvideo = ({videoId}) => {
                             <p>{item.snippet.topLevelComment.snippet.textOriginal}</p>
                             <div className="comment-action">
                                 <img src={like} alt="" />
-                                <span>{item.snippet.topLevelComment.snippet.likeCount}</span>
+                                <span>{value_converter(item.snippet.topLevelComment.snippet.likeCount)}</span>
                                 <img src={dislike} alt="" />
                             </div>
                         </div>
