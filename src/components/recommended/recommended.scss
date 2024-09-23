@@ -11,7 +11,13 @@
         flex-basis: 49%;
         width: 50%;
         border-radius: 5px;
+        height: 8vw;
+        min-height: 140px;
     }
+}
+
+.recommended-header {
+    margin-bottom: 15px;
 }
 
 .vid-info {
@@ -28,3 +34,14 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .recommended {
+        flex-basis: 40%;
+    }
+}
+
+@media (width: 900px) {
+    .recommended {
+        flex-basis: 100%;
+    }
+}
