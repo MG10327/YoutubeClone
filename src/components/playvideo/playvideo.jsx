@@ -26,7 +26,7 @@ const playvideo = ({videoId}) => {
         await fetch(channelData_url).then(res=>res.json()).then(data=>setChannelData(data.items[0]))
 
         // Fetching Comment Data
-        const commentData_url = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=${videoId}&key=${API_KEY}`
+        const commentData_url = `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&maxResults=50&videoId=${videoId}&key=${API_KEY}`
         await fetch(commentData_url).then(res=>res.json()).then(data=>setCommentsData(data.items))
     }
 
@@ -42,7 +42,7 @@ const playvideo = ({videoId}) => {
 
   return (
     <div className="play-video">
-        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         <h3>{apiData ? apiData.snippet.title : "Title Here"}</h3>
         <div className="play-video-info">
             <p>{apiData ? value_converter(apiData.statistics.viewCount) + " Views" : "Views Here"} &bull; {apiData ? moment(apiData.snippet.publishedAt).fromNow() : "Date Here"}</p>
